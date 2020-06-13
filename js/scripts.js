@@ -5,7 +5,7 @@ let rogerArray = []
 
 function threeDetector (strNum) {for (let i=0; i < strNum.length; i++) {
       if (strNum.charAt(i) === "3") {
-      rogerArray.push("Won't you be my neighbor?");
+      rogerArray = ("Won't you be my neighbor?");
       break;}
 
         else {twoDetector(strNum)
@@ -16,7 +16,7 @@ function threeDetector (strNum) {for (let i=0; i < strNum.length; i++) {
 
 function twoDetector (strNum) {for (let i=0; i < strNum.length; i++) {
       if (strNum.charAt(i) === "2") {
-      rogerArray.push("Boop!");
+      rogerArray = ("Boop!");
       break;}
     
       else {oneDetector(strNum)
@@ -26,10 +26,10 @@ function twoDetector (strNum) {for (let i=0; i < strNum.length; i++) {
 
 function oneDetector (strNum) {for (let i=0; i < strNum.length; i++) {
       if (strNum.charAt(i) === "1") {
-      rogerArray.push("Beep!");
+      rogerArray = ("Beep!");
       break;}
   
-      else {rogerArray.push(strNum)
+      else {break;
         ;}
       }
         
