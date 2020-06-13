@@ -3,24 +3,37 @@
 
 let rogerArray = []
 
-function rogerDetector (strNum) {for (let i=0; i < strNum.length; i++) {
+function threeDetector (strNum) {for (let i=0; i < strNum.length; i++) {
       if (strNum.charAt(i) === "3") {
       rogerArray.push("Won't you be my neighbor?");
       break;}
-      
-      else if (strNum.charAt(i) === "2") {
-          rogerArray.push("boop");
-          ;
-        }
-        else {rogerArray.push(strNum)
+
+        else {twoDetector(strNum)
         ;}
       }
       
       }
 
+function twoDetector (strNum) {for (let i=0; i < strNum.length; i++) {
+      if (strNum.charAt(i) === "2") {
+      rogerArray.push("Boop!");
+      break;}
+    
+      else {oneDetector(strNum)
+        ;}
+        }
+      }
 
-
-
+function oneDetector (strNum) {for (let i=0; i < strNum.length; i++) {
+      if (strNum.charAt(i) === "1") {
+      rogerArray.push("Beep!");
+      break;}
+  
+      else {rogerArray.push(strNum)
+        ;}
+      }
+        
+     }
 
 
 
@@ -35,7 +48,7 @@ $(document).ready(function() {
     event.preventDefault();
     let strNum = $("input#change-number").val();
     // let arrayCheck = strNum.split("")
-    rogerDetector(strNum);
+    threeDetector(strNum);
     // arrayCheck.forEach(function(string){
     //   // for (let i=0; i < strNum.length; i ++) {
     //       if (string.charAt() === "3") {
