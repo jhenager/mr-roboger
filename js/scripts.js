@@ -5,7 +5,7 @@ let rogerArray = []
 
 function threeDetector (strNum) {for (let i=0; i < strNum.length; i++) {
       if (strNum.charAt(i) === "3") {
-      rogerArray = ("Won't you be my neighbor?");
+      rogerStr = (" Won't you be my neighbor?");
       break;}
 
         else {twoDetector(strNum)
@@ -16,7 +16,7 @@ function threeDetector (strNum) {for (let i=0; i < strNum.length; i++) {
 
 function twoDetector (strNum) {for (let i=0; i < strNum.length; i++) {
       if (strNum.charAt(i) === "2") {
-      rogerArray = ("Boop!");
+      rogerStr = (" Boop!");
       break;}
     
       else {oneDetector(strNum)
@@ -26,10 +26,10 @@ function twoDetector (strNum) {for (let i=0; i < strNum.length; i++) {
 
 function oneDetector (strNum) {for (let i=0; i < strNum.length; i++) {
       if (strNum.charAt(i) === "1") {
-      rogerArray = ("Beep!");
+      rogerStr = (" Beep!");
       break;}
   
-      else {break;
+      else {rogerStr=strNum;
         ;}
       }
         
@@ -49,6 +49,7 @@ $(document).ready(function() {
     let strNum = $("input#change-number").val();
     // let arrayCheck = strNum.split("")
     threeDetector(strNum);
+    rogerArray.push(rogerStr);
     // arrayCheck.forEach(function(string){
     //   // for (let i=0; i < strNum.length; i ++) {
     //       if (string.charAt() === "3") {
