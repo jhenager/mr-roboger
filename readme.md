@@ -1,12 +1,12 @@
 # _Mr. Roboger's Neighborhood_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _This application is an input/output machine, 6/13/2020_
 
 #### By _**James Henager**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Robot Mr. Robogers is a little like Mr. Rogers and a lot like a robot! Enter a number and Mr. Robogers will repeat it back. However, certain numbers will prompt Mr. Robogers to say one of his catchphrases, see if you can find out which numbers make him say what!_
 
 ## Setup/Installation Requirements
 
@@ -40,15 +40,15 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_There are no known bugs in this application_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_If you have any issues at all with this application please email me at jameschenager@gmail.com and I would love to help you with them._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_This application was created using HTML, CSS, Javascript and JQuery._
 
 ### License
 
