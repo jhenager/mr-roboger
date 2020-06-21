@@ -10,6 +10,7 @@ _Robot Mr. Robogers is a little like Mr. Rogers and a lot like a robot! Enter a 
 
 ## Setup/Installation Requirements
 
+* _Clone the repository from "https://github.com/jhenager/mr-roboger.git" and open with your preferred code editor of choice_
 
 ## Specs
 
