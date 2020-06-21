@@ -3,38 +3,44 @@
 
 let rogerArray = []
 
-function threeDetector (strNum) {
-  for (let i=0; i < strNum.length; i++) {
-      if (strNum.charAt(i) === "3") {
-        rogerStr = " Won't you be my neighbor?";
-        break;
-      } else {
-        twoDetector(strNum);
-        }
-      }
-    }
-
-function twoDetector (strNum) {
-  for (let i=0; i < strNum.length; i++) {
-      if (strNum.charAt(i) === "2") {
-      rogerStr = " Boop!";
-      break;
-    } else {
-      oneDetector(strNum);
-      }
-    }
+function numberPrinter (strNum) {
+  for (let i=0; i<= strNum; i ++) {
+    rogerArray.push(" "+ i);
   }
+}
 
-function oneDetector (strNum) {
-  for (let i=0; i < strNum.length; i++) {
-      if (strNum.charAt(i) === "1") {
-      rogerStr = " Beep!";
-      break;
-    } else {
-      rogerStr=strNum;
-      }
-    }
-  }
+// function threeDetector (strNum) {
+//   for (let i=0; i < strNum.length; i++) {
+//       if (strNum.charAt(i) === "3") {
+//         rogerStr = " Won't you be my neighbor?";
+//         break;
+//       } else {
+//         twoDetector(strNum);
+//         }
+//       }
+//     }
+
+// function twoDetector (strNum) {
+//   for (let i=0; i < strNum.length; i++) {
+//       if (strNum.charAt(i) === "2") {
+//       rogerStr = " Boop!";
+//       break;
+//     } else {
+//       oneDetector(strNum);
+//       }
+//     }
+//   }
+
+// function oneDetector (strNum) {
+//   for (let i=0; i < strNum.length; i++) {
+//       if (strNum.charAt(i) === "1") {
+//       rogerStr = " Beep!";
+//       break;
+//     } else {
+//       rogerStr=strNum;
+//       }
+//     }
+//   }
 
 
 
@@ -49,23 +55,9 @@ $(document).ready(function() {
     event.preventDefault();
     let strNum = $("input#change-number").val();
     // let arrayCheck = strNum.split("")
-    threeDetector(strNum);
-    rogerArray.push(rogerStr);
-    // arrayCheck.forEach(function(string){
-    //   // for (let i=0; i < strNum.length; i ++) {
-    //       if (string.charAt() === "3") {
-    //       roboArray.push("Won't you be my neighbor");
-    //       break;
-    //       } else if (string.charAt() === "2") {
-    //       roboArray.push("Boop!");
-    //       break;
-    //       } else if (string.charAt() === "1") {
-    //       roboArray.push("Beep!")
-    //       break;
-    //       }
-    //       else {roboArray.push(strNum)}
-    //     });
-    //   roboArray.join("");
+    // threeDetector(strNum);
+    // rogerArray.push(rogerStr);
+    numberPrinter(strNum);
     
     console.log(rogerArray);
     $("#translation").text(rogerArray);
