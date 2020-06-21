@@ -2,51 +2,27 @@
 
 
 let rogerArray = []
+let displayArray = []
 
 function numberPrinter (strNum) {
   for (let i=0; i<= strNum; i ++) {
     rogerArray.push(" "+ i);
+    }
   }
-}
 
-// function threeDetector (strNum) {
-//   for (let i=0; i < strNum.length; i++) {
-//       if (strNum.charAt(i) === "3") {
-//         rogerStr = " Won't you be my neighbor?";
-//         break;
-//       } else {
-//         twoDetector(strNum);
-//         }
-//       }
-//     }
-
-// function twoDetector (strNum) {
-//   for (let i=0; i < strNum.length; i++) {
-//       if (strNum.charAt(i) === "2") {
-//       rogerStr = " Boop!";
-//       break;
-//     } else {
-//       oneDetector(strNum);
-//       }
-//     }
-//   }
-
-// function oneDetector (strNum) {
-//   for (let i=0; i < strNum.length; i++) {
-//       if (strNum.charAt(i) === "1") {
-//       rogerStr = " Beep!";
-//       break;
-//     } else {
-//       rogerStr=strNum;
-//       }
-//     }
-//   }
-
-
-
-
-
-
+function threeDetector (rogerArray) {
+  for (let i=0; i <= rogerArray.length-1; i++) {
+      if (rogerArray[i].includes("3")) {
+        displayArray.push(" Won't you be my neighbor")
+      } else if (rogerArray[i].includes("2")) {
+        displayArray.push(" Boop!")
+      } else if (rogerArray[i].includes("1")) {
+        displayArray.push(" Beep!")
+      } else  {
+        displayArray.push(rogerArray[i])
+      }
+    } 
+  };
 
 // User Interface Logic
 
@@ -54,12 +30,8 @@ $(document).ready(function() {
   $("form#translator").submit(function(event) {
     event.preventDefault();
     let strNum = $("input#change-number").val();
-    // let arrayCheck = strNum.split("")
-    // threeDetector(strNum);
-    // rogerArray.push(rogerStr);
     numberPrinter(strNum);
-    
-    console.log(rogerArray);
-    $("#translation").text(rogerArray);
+    threeDetector(rogerArray);
+    $("#translation").text(displayArray);
   });
 });
