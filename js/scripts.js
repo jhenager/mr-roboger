@@ -3,37 +3,38 @@
 
 let rogerArray = []
 
-function threeDetector (strNum) {for (let i=0; i < strNum.length; i++) {
+function threeDetector (strNum) {
+  for (let i=0; i < strNum.length; i++) {
       if (strNum.charAt(i) === "3") {
-      rogerStr = (" Won't you be my neighbor?");
-      break;}
-
-        else {twoDetector(strNum)
-        ;}
-      }
-      
-      }
-
-function twoDetector (strNum) {for (let i=0; i < strNum.length; i++) {
-      if (strNum.charAt(i) === "2") {
-      rogerStr = (" Boop!");
-      break;}
-    
-      else {oneDetector(strNum)
-        ;}
+        rogerStr = " Won't you be my neighbor?";
+        break;
+      } else {
+        twoDetector(strNum);
         }
       }
+    }
 
-function oneDetector (strNum) {for (let i=0; i < strNum.length; i++) {
-      if (strNum.charAt(i) === "1") {
-      rogerStr = (" Beep!");
-      break;}
-  
-      else {rogerStr=strNum;
-        ;}
+function twoDetector (strNum) {
+  for (let i=0; i < strNum.length; i++) {
+      if (strNum.charAt(i) === "2") {
+      rogerStr = " Boop!";
+      break;
+    } else {
+      oneDetector(strNum);
       }
-        
-     }
+    }
+  }
+
+function oneDetector (strNum) {
+  for (let i=0; i < strNum.length; i++) {
+      if (strNum.charAt(i) === "1") {
+      rogerStr = " Beep!";
+      break;
+    } else {
+      rogerStr=strNum;
+      }
+    }
+  }
 
 
 

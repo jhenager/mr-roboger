@@ -13,27 +13,27 @@ _Robot Mr. Robogers is a little like Mr. Rogers and a lot like a robot! Enter a 
 
 ## Specs
 
-* _The program should not allow the output of alphabetical characters.
+* _The program should not allow the output of alphabetical characters._
     - Input Example: ABCD
     - Output Example: Alert - please enter a number
 
-* _The program should take a number input and display it on the page for the user to read.
+* _The program should take a number input and display it on the page for the user to read._
     - Input Example: 20, 102
     - Output Example: "Boop!"
 
-* _The program should take a number input with a value of 3 anywhere in it and output, "Won't you be my neighbor"
+* _The program should take a number input with a value of 3 anywhere in it and output, "Won't you be my neighbor"_
     - Input Example: 32, 300, 203
     - Output Example: "Won't you be my neighbor?"
 
-* _The program should take a number input with a value of 2 anywhere in it, but no 3, and output "Boop!"
+* _The program should take a number input with a value of 2 anywhere in it, but no 3, and output "Boop!"_
     - Input Example: 20, 102
     - Output Example: "Boop!"
 
-* _The program should take a number input with a value of 1 anywhere in it, but no 3 or 2, and output "Beep!"
+* _The program should take a number input with a value of 1 anywhere in it, but no 3 or 2, and output "Beep!"_
     - Input Example: 101, 51, 19
     - Output Example: "Beep!"
 
-* _The program should allow the user to continually enter new numbers into the field.
+* _The program should allow the user to continually enter new numbers into the field._
     - Input Example: 20, 102
     - Output Example: "Boop!"
 
