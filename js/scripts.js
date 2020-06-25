@@ -31,7 +31,6 @@ $(document).ready(function() {
     event.preventDefault();
     let strNum = $("input#change-number").val();
     const rogerArray = numberPrinter(strNum);
-    const displayArray = threeDetector(rogerArray);
-    $("#translation").text(displayArray);
+    const displayArray = $("#translation").text(threeDetector(rogerArray));
   });
 });
