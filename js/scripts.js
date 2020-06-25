@@ -1,10 +1,7 @@
 // Business Logic
 
-
-let displayArray = []
-
 function numberPrinter (strNum) {
-  let rogerArray = []
+  let rogerArray = [];
   for (let i=0; i<= strNum; i ++) {
     rogerArray.push(" "+ i);
   }
@@ -12,6 +9,7 @@ function numberPrinter (strNum) {
 }
 
 function threeDetector (rogerArray) {
+  let displayArray= [];
   for (let i=0; i <= rogerArray.length-1; i++) {
     if (rogerArray[i].includes("3")) {
       displayArray.push(" Won't you be my neighbor")
@@ -23,6 +21,7 @@ function threeDetector (rogerArray) {
       displayArray.push(rogerArray[i])
     }
   } 
+  return displayArray;
 };
 
 // User Interface Logic
@@ -32,7 +31,7 @@ $(document).ready(function() {
     event.preventDefault();
     let strNum = $("input#change-number").val();
     const rogerArray = numberPrinter(strNum);
-    threeDetector(rogerArray);
+    const displayArray = threeDetector(rogerArray);
     $("#translation").text(displayArray);
   });
 });
